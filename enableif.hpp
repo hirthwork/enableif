@@ -4,7 +4,9 @@
 namespace NReinventedWheels
 {
     template <bool, class = void>
-    struct TEnableIf;
+    struct TEnableIf
+    {
+    };
 
     template <class TType>
     struct TEnableIf<true, TType>
