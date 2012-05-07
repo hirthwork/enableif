@@ -1,17 +1,17 @@
 #ifndef __ENABLEIF_HPP_2012_01_28__
 #define __ENABLEIF_HPP_2012_01_28__
 
-namespace NReinventedWheels
+namespace reinvented_wheels
 {
     template <bool, class = void>
-    struct TEnableIf
+    struct enable_if
     {
     };
 
-    template <class TType>
-    struct TEnableIf<true, TType>
+    template <class T>
+    struct enable_if<true, T>
     {
-        typedef TType TType_;
+        typedef T type;
     };
 }
 
